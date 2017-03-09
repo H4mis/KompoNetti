@@ -270,6 +270,8 @@
     <Content Include="Global.asax" />
     <Content Include="Site.Master" />
     <Content Include="ViewSwitcher.ascx" />
+    <Content Include="Views\Tuote.aspx" />
+    <Content Include="Views\Tuotteet.aspx" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
     <Content Include="packages.config" />
@@ -441,6 +443,20 @@
     </Compile>
     <Compile Include="ViewSwitcher.ascx.designer.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Tuote.aspx.cs">
+      <DependentUpon>Tuote.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Tuote.aspx.designer.cs">
+      <DependentUpon>Tuote.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Tuotteet.aspx.cs">
+      <DependentUpon>Tuotteet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Tuotteet.aspx.designer.cs">
+      <DependentUpon>Tuotteet.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

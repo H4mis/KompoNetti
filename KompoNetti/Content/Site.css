@@ -1,6 +1,6 @@
 ﻿/* Move down content because we have a fixed navbar that is 50px tall */
 body {
-    padding-top: 50px;
+    padding-top: 280px;
     padding-bottom: 20px;
 }
 
@@ -37,11 +37,11 @@ input[type="select"] {
     }
 }
 .navbar-custom {
-    background: #1F5FB9;
+    background: black;
 
 }
 
 .container-custom {
-    background: #174b95;
+    background:black;
 
 }
