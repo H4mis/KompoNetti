@@ -64,6 +64,21 @@
         <PagerStyle BackColor="White" ForeColor="Black" HorizontalAlign="Right" />
     </asp:FormView>
 
+
+
+    
+    
+    <asp:Label ID="Label1" runat="server" Text="Lukumäärä: "></asp:Label><asp:TextBox ID="TextBoxLukumaara" runat="server"></asp:TextBox>
+    <br />
+    <asp:Label ID="Label2" runat="server" Text="Maksuehto: "></asp:Label><asp:DropDownList ID="DropDownListMaksuehto" runat="server" DataSourceID="SqlDataSource3" DataTextField="Maksuehto" DataValueField="Maksuehto"></asp:DropDownList>
+    
+    <br />
+    <asp:Button ID="ButtonTilaa" runat="server" Text="Tilaa" OnClick="ButtonTilaa_Click" />
+    <br />
+    <asp:Label ID="LabelOnnistuikoTilaus" runat="server" Text="Status"></asp:Label>
+    <asp:SqlDataSource ID="SqlDataSource3" runat="server" ConnectionString="<%$ ConnectionStrings:Sebastian_dbConnectionString %>" SelectCommand="SELECT [Maksuehto] FROM [Maksuehto]"></asp:SqlDataSource>
+
+
     <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:Sebastian_dbConnectionString %>" SelectCommand="SELECT * FROM [Tuote]"></asp:SqlDataSource>
 
     <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:Sebastian_dbConnectionString %>" SelectCommand="SELECT * FROM [Tuote]"></asp:SqlDataSource>
